@@ -1,0 +1,96 @@
+body{
+     font-family: 'Manrope', sans-serif;
+     background-color: hsl(218, 23%, 16%);
+}
+.container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     gap: 12em;
+}
+.main{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 150px;
+     width: 370px;
+     height: 250px;
+     background-color:hsl(217, 19%, 24%);
+     border-radius: 10px;
+     position: relative;
+}
+.adviceNumber{
+     text-transform: uppercase;
+     font-size: 0.6em;
+     color: hsl(150, 100%, 66%);
+     letter-spacing: 0.3em;
+     margin-top: -20px;
+}
+.advice-box{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 350px;
+     height: 150px;
+}
+h1{
+     font-size: 1.2em;
+     color:  hsl(193, 38%, 86%);
+     padding: 10px 30px;
+     text-align: center;
+     margin-top: 5px;
+}
+.divider-desktop{
+     width: 80%;
+     margin-top: -5px;
+}
+.dice-background{
+     position: absolute;
+     bottom: -20px;
+     border: 1px solid hsl(150, 100%, 66%);
+     background-color: hsl(150, 100%, 66%);
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     z-index: 1;
+}
+.dice-background:hover{
+     box-shadow: 0 0 10px hsl(150, 100%, 66%);
+     cursor: pointer;
+}
+.dice-hover{
+     box-shadow: 0 0 10px hsl(150, 100%, 66%);
+     cursor: pointer;
+}
+.icon-dice{
+     width: 16px;
+     position: absolute;
+     z-index: 2;
+     bottom: -7px;
+     cursor: pointer;
+     transition: box-shadow 0.3s ease-in-out;
+}
+.attribution {
+     font-size: 11px; 
+     text-align: center; 
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+@media(max-width: 650px){
+     .container{
+          height: 100%;
+     }
+     .main{
+          width: 300px;
+          height: 270px;
+     }
+     h1{
+          font-size: 1em;
+     }
+}
